@@ -1,7 +1,7 @@
 <template>
-    <HelloMe />
+    <helloMe />
 </template>
 
 <script lang="ts" setup>
-import HelloMe from '@/components/HelloMe.vue'
+import helloMe from '@/components/helloMe.vue'
 </script>

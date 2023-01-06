@@ -1,27 +1,35 @@
 <template>
 
   <v-main class="bg-grey-lighten-3">
-    <v-container>
+    <v-card>
       <v-row>
-        <v-col cols="12" sm="2">
-          <v-sheet rounded="lg" min-height="268">
-            <!--  -->
-          </v-sheet>
+        <v-col cols="5" offset="10px">
+          <v-card max-width="434" min-width="434" class="pa-4">
+            <helloMe />
+          </v-card>
         </v-col>
 
-        <v-col cols="12" sm="8">
-          <v-sheet min-height="70vh" rounded="lg">
-            <!--  -->
-          </v-sheet>
+        <v-col cols="4">
+          <v-card class="pa-4">
+            <v-sheet min-height="92vh" rounded="lg" color="secondary_v" class="pd-3">
+              <!--  -->
+            </v-sheet>
+          </v-card>
         </v-col>
 
-        <v-col cols="12" sm="2">
-          <v-sheet rounded="lg" min-height="268">
-            <!--  -->
-          </v-sheet>
+        <v-col cols="3">
+          <v-card class="pa-4">
+            <v-sheet rounded="lg" min-height="268" color="secondary_v" class="pa-4">
+              <!--  -->
+            </v-sheet>
+          </v-card>
         </v-col>
       </v-row>
-    </v-container>
+    </v-card>
   </v-main>
 
 </template>
+
+<script lang="ts" setup>
+import helloMe from '../components/HelloMe.vue'
+</script>
