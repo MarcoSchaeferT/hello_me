@@ -5,33 +5,24 @@
     <v-spacer></v-spacer>
 
     <v-tabs centered color="grey-darken-2">
-      <v-tab v-for="link in links" key="links">
+      <v-tab v-for="link in links" v-bind:key="link">
         {{ link }}
       </v-tab>
     </v-tabs>
     <v-spacer></v-spacer>
 
-    <v-avatar class="hidden-sm-and-down" color="grey-darken-1" size="32"></v-avatar>
+    <v-avatar
+      class="hidden-sm-and-down"
+      color="grey-darken-1"
+      size="32"
+    ></v-avatar>
   </v-app-bar>
-
-
 </template>
 
+<script setup lang="ts">
+import { computed } from "vue";
+import { useAppStore } from "@/store/app";
 
-<script lang="ts">
-export default {
-  data() {
-    return {
-      links: [
-        'Dashboard',
-        'Messages',
-        'Profile',
-        'Updates',
-      ],
-    }
-  }
-}
-
-
-
+var store = useAppStore();
+var links = store.links;
 </script>

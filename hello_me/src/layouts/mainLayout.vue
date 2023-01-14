@@ -6,6 +6,6 @@
 </template>
 
 <script lang="ts" setup>
-import appBar from './appBar.vue'
-import appMain from './appMain.vue'
+import appBar from "./appBar.vue";
+import appMain from "./appMain.vue";
 </script>
